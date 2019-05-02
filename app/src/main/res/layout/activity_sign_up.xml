@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF008577"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="0dp"
+        android:layout_y="3dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back" />
+
+    <ImageView
+
+        android:layout_width="289dp"
+        android:layout_height="166dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_x="79dp"
+        android:layout_y="18dp"
+        android:src="@drawable/logo" />
+
+    <ImageView
+
+        android:layout_width="289dp"
+        android:layout_height="166dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_x="323dp"
+        android:layout_y="18dp"
+        android:src="@drawable/ic_rapid" />
+
+    <ImageView
+
+        android:layout_width="289dp"
+        android:layout_height="166dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_x="487dp"
+        android:layout_y="18dp"
+        android:src="@drawable/ic_feedback" />
+
+    <ImageView
+
+        android:layout_width="289dp"
+        android:layout_height="166dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_x="661dp"
+        android:layout_y="18dp"
+        android:src="@drawable/ic_system" />
+
+
+    <ImageView
+        android:id="@+id/textView4"
+        android:layout_width="289dp"
+        android:layout_height="166dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_x="477dp"
+        android:layout_y="132dp"
+        android:src="@drawable/ic_font_signup" />
+
+    <ScrollView
+        android:layout_width="453dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_x="410dp"
+        android:layout_y="299dp"
+        android:scaleType="fitCenter">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/trans_white_rectangle"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fName"
+                android:layout_width="506dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:background="@drawable/rounded_white"
+
+
+                android:drawableLeft="@drawable/ic_action_name"
+                android:hint="First Name"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:textSize="18sp"
+
+                />
+
+            <EditText
+                android:id="@+id/mName"
+                android:layout_width="506dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:background="@drawable/rounded_white"
+
+                android:drawableLeft="@drawable/ic_action_name"
+                android:hint="Middle Name(Optional)"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:textSize="18sp"
+
+                />
+
+            <EditText
+                android:id="@+id/lName"
+                android:layout_width="506dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:background="@drawable/rounded_white"
+
+                android:drawableLeft="@drawable/ic_action_name"
+                android:hint="Last Name"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:textSize="18sp"
+
+                />
+
+            <EditText
+                android:id="@+id/userEmail"
+                android:layout_width="506dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:background="@drawable/rounded_white"
+
+                android:drawableLeft="@drawable/ic_action_name"
+                android:hint="Email"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:textSize="18sp"
+
+                />
+
+            <EditText
+                android:id="@+id/userPassword"
+                android:layout_width="393dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="25dp"
+
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@drawable/password"
+                android:hint="Password"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:textSize="18sp"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/CPassword"
+                android:layout_width="393dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:background="@drawable/rounded_white"
+
+                android:drawableLeft="@drawable/password"
+                android:hint="Confirm Password"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:textSize="18sp"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="394dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_x="407dp"
+                android:layout_y="731dp"
+                android:background="@drawable/mybutton"
+                android:text="Submit"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="617dp"
+                tools:layout_editor_absoluteY="677dp" />
+
+        </TableLayout>
+    </ScrollView>
+</AbsoluteLayout>

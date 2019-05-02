@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/textView2"
+        android:layout_width="289dp"
+        android:layout_height="166dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_x="372dp"
+        android:layout_y="231dp"
+        android:src="@drawable/ic_font_login" />
+
+    <ImageView
+
+        android:layout_width="289dp"
+        android:layout_height="166dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_x="79dp"
+        android:layout_y="18dp"
+        android:src="@drawable/logo" />
+
+    <ImageView
+
+        android:layout_width="289dp"
+        android:layout_height="166dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_x="323dp"
+        android:layout_y="18dp"
+        android:src="@drawable/ic_rapid" />
+
+    <ImageView
+
+        android:layout_width="289dp"
+        android:layout_height="166dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_x="487dp"
+        android:layout_y="18dp"
+        android:src="@drawable/ic_feedback" />
+
+    <ImageView
+
+        android:layout_width="289dp"
+        android:layout_height="166dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_x="661dp"
+        android:layout_y="18dp"
+        android:src="@drawable/ic_system" />
+
+
+    <ImageView
+        android:id="@+id/textView4"
+        android:layout_width="289dp"
+        android:layout_height="166dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_x="916dp"
+        android:layout_y="708dp"
+        android:src="@drawable/ic_font_signup" />
+
+    <ScrollView
+        android:layout_width="453dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_x="420dp"
+        android:layout_y="333dp"
+        android:scaleType="fitCenter">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/trans_white_rectangle"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/userEmail"
+                android:layout_width="506dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@drawable/ic_action_name"
+                android:hint="Email"
+                android:paddingLeft="30dp"
+                android:textSize="18sp"
+
+
+                />
+
+            <EditText
+                android:id="@+id/userPassword"
+                android:layout_width="393dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@drawable/password"
+                android:hint="Password"
+                android:paddingLeft="30dp"
+                android:textSize="18sp"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="233dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_x="407dp"
+                android:layout_y="731dp"
+                android:background="@drawable/mybutton"
+                android:text="Submit"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="617dp"
+                tools:layout_editor_absoluteY="677dp" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="223dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_x="677dp"
+                android:layout_y="730dp"
+                android:background="@drawable/mybutton"
+                android:text="Reset"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="617dp"
+                tools:layout_editor_absoluteY="677dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_x="418dp"
+                android:layout_y="677dp"
+                android:text="Remember Me"
+                tools:layout_editor_absoluteX="403dp"
+                tools:layout_editor_absoluteY="671dp"
+                tools:textSize="30sp" />
+        </TableLayout>
+    </ScrollView>
+
+</AbsoluteLayout>
