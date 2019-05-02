@@ -28,7 +28,7 @@ public class CommunicationForClient {
     AllFunctions functions;
 
     public CommunicationForClient(AllFunctions functions) {
-        host = "http://10.13.119.185:8080/RapidFeedback/";
+        host = "http://10.13.101.237/RapidFeedback/";
         client = new OkHttpClient();
         this.functions = functions;
     }
@@ -36,7 +36,7 @@ public class CommunicationForClient {
     //This is the constructor for test
     public CommunicationForClient()
     {
-        host = "http://10.13.119.185:8080/RapidFeedback/";
+        host = "http://10.13.101.237/RapidFeedback/";
         client = new OkHttpClient();
     }
 
