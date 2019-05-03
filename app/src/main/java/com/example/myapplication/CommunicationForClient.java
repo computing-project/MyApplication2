@@ -28,7 +28,7 @@ public class CommunicationForClient {
     AllFunctions functions;
     boolean register_ACK=false;
     public CommunicationForClient(AllFunctions functions) {
-        host = "http://10.13.101.237/RapidFeedback/";
+        host = "http://10.13.101.237:8080/RapidFeedback/";
         client = new OkHttpClient();
         this.functions = functions;
     }
