@@ -26,7 +26,7 @@ public class CommunicationForClient {
     public String userName="";
     //private String myUsername;
     AllFunctions functions;
-
+    boolean register_ACK=false;
     public CommunicationForClient(AllFunctions functions) {
         host = "http://10.13.101.237/RapidFeedback/";
         client = new OkHttpClient();
@@ -60,7 +60,7 @@ public class CommunicationForClient {
             System.out.println("Receive: " + receive); //just for test
             JSONObject jsonReceive = JSONObject.parseObject(receive);
 
-            boolean register_ACK = Boolean.getBoolean(jsonReceive.get("register_ACK").toString());
+            register_ACK = Boolean.getBoolean(jsonReceive.get("register_ACK").toString());
             functions.registerACK(register_ACK);
         } catch (IOException e1) {
             e1.printStackTrace();

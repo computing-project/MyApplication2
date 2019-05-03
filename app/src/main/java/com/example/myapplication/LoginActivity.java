@@ -37,7 +37,8 @@ public class LoginActivity extends AppCompatActivity {
                 af.login("test@gmail.com","123456");
                 userName=af.userName;
 
-                if(userName==null) {
+                if(userName!=null) {
+                    Toast.makeText(getApplicationContext(),userName,Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                 }
