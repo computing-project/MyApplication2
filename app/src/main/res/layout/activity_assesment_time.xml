@@ -9,14 +9,14 @@
 
     >
 
- <android.support.v7.widget.Toolbar
-     android:id="@+id/toolbar"
-     android:layout_width="match_parent"
-     android:layout_height="63dp"
-     android:background="#808080"
-     tools:ignore="MissingConstraints"
-     tools:layout_editor_absoluteX="0dp"
-     tools:layout_editor_absoluteY="0dp" />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="#808080"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <AbsoluteLayout
         android:layout_width="match_parent"
@@ -166,11 +166,11 @@
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_x="594dp"
-            android:layout_y="693dp"
-            app:srcCompat="@drawable/circle"
+            android:layout_width="43dp"
+            android:layout_height="51dp"
+            android:layout_x="584dp"
+            android:layout_y="680dp"
+            app:srcCompat="@drawable/two"
             tools:layout_editor_absoluteX="401dp"
             tools:layout_editor_absoluteY="587dp" />
 
@@ -196,11 +196,11 @@
 
         <ImageView
             android:id="@+id/imageView8"
-            android:layout_width="43dp"
-            android:layout_height="51dp"
-            android:layout_x="533dp"
-            android:layout_y="678dp"
-            app:srcCompat="@drawable/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="545dp"
+            android:layout_y="693dp"
+            app:srcCompat="@drawable/circle"
             tools:layout_editor_absoluteX="292dp"
             tools:layout_editor_absoluteY="309dp" />
 
