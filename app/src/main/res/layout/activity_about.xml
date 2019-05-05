@@ -9,7 +9,7 @@
 
     >
 
- <android.support.v7.widget.Toolbar
+    <android.support.v7.widget.Toolbar
      android:id="@+id/toolbar"
      android:layout_width="match_parent"
      android:layout_height="63dp"
@@ -19,11 +19,153 @@
      tools:layout_editor_absoluteY="0dp" />
 
     <AbsoluteLayout
+        android:id="@+id/project_name"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="63dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/pname"
+            android:layout_width="361dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:layout_x="325dp"
+
+
+            android:layout_y="305dp"
+            android:background="@drawable/rounded_white"
+            android:hint="Enter Project Name"
+            android:padding="10dp"
+
+            android:paddingLeft="30dp"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="303dp"
+            tools:layout_editor_absoluteY="330dp" />
+
+        <EditText
+            android:id="@+id/sname"
+            android:layout_width="361dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:layout_x="322dp"
+
+
+            android:layout_y="400dp"
+            android:background="@drawable/rounded_white"
+            android:hint="Enter Subject Name"
+            android:padding="10dp"
+
+            android:paddingLeft="30dp"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="303dp"
+            tools:layout_editor_absoluteY="436dp" />
+
+        <EditText
+            android:id="@+id/sname2"
+            android:layout_width="500dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:layout_x="321dp"
+
+
+            android:layout_y="512dp"
+            android:background="@drawable/rounded_white"
+            android:hint="Enter Description Here"
+            android:padding="10dp"
+
+            android:paddingLeft="30dp"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="303dp"
+            tools:layout_editor_absoluteY="436dp" />
+
+        <EditText
+            android:id="@+id/scode"
+            android:layout_width="361dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:layout_x="905dp"
+
+
+            android:layout_y="391dp"
+            android:background="@drawable/rounded_white"
+            android:hint="Enter Subject Code"
+            android:padding="10dp"
+
+            android:paddingLeft="30dp"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="919dp"
+            tools:layout_editor_absoluteY="424dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_x="23dp"
+            android:layout_y="305dp"
+            android:text="Project Name:"
+            android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="240dp"
+            tools:layout_editor_absoluteY="318dp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_x="591dp"
+            android:layout_y="0dp"
+            android:text="About"
+            android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="240dp"
+            tools:layout_editor_absoluteY="318dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_x="22dp"
+            android:layout_y="507dp"
+            android:text="Project Description:"
+            android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="240dp"
+            tools:layout_editor_absoluteY="318dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_x="23dp"
+            android:layout_y="409dp"
+            android:text="Subject Name:"
+            android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="240dp"
+            tools:layout_editor_absoluteY="318dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_x="707dp"
+            android:layout_y="387dp"
+            android:text="Subject Code:"
+            android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="240dp"
+            tools:layout_editor_absoluteY="318dp" />
 
         <ImageView
 
