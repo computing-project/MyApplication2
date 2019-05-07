@@ -27,7 +27,7 @@ public class SignUp extends AppCompatActivity {
         String Email=email.getText().toString();
         String Password=password.getText().toString();
         String cPassword=cpassword.getText().toString();
-        AllFunctions af=new AllFunctions();
+        AllFunctions af=AllFunctions.getObject();
         Button submit=(Button)findViewById(R.id.button);
         CommunicationForClient cfc=new CommunicationForClient(af);
         Boolean ack=false;

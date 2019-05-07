@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class AssesmentTime extends AppCompatActivity {
     public int t1,t2,t3,t4;
@@ -36,7 +37,7 @@ public class AssesmentTime extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AssesmentTime.this, Criteria.class);
+                Intent intent = new Intent(AssesmentTime.this, MarkingCriteria.class);
                 startActivity(intent);
             }
         });
@@ -51,56 +52,56 @@ public class AssesmentTime extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 t1++;
-                time1.setText(t1);
+                time1.setText(String.valueOf(t1));
             }
         });
         ig2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 t1--;
-                time1.setText(t1);
+                time1.setText(String.valueOf(t1));
             }
         });
         ig3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 t2++;
-                time1.setText(t2);
+                time2.setText(String.valueOf(t2));
             }
         });
         ig4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 t2--;
-                time1.setText(t2);
+                time2.setText(String.valueOf(t2));
             }
         });
         ig5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 t3++;
-                time1.setText(t3);
+                time3.setText(String.valueOf(t3));
             }
         });
         ig6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 t3--;
-                time1.setText(t3);
+                time3.setText(String.valueOf(t3));
             }
         });
         ig7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 t4++;
-                time1.setText(t4);
+                time4.setText(String.valueOf(t4));
             }
         });
         ig8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 t4--;
-                time1.setText(t4);
+                time4.setText(String.valueOf(t4));
             }
         });
 

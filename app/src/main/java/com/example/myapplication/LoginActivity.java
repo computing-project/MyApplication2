@@ -24,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
         String email1=email.getText().toString();
         String password1=password.getText().toString();
 
-        final AllFunctions af=new AllFunctions();
+        final AllFunctions af=AllFunctions.getObject();
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
