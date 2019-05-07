@@ -4,15 +4,16 @@ package com.example.myapplication;
 import android.util.Log;
 
 import com.alibaba.fastjson.JSON;
-import com.example.myapplication.ProjectInfo;
 
 import java.util.ArrayList;
 
 public class AllFunctions{
 
+    private static AllFunctions allFunctions;
+    //initiate the new object: AllFunctions all = AllFunctions.getObject();
+
     private CommunicationForClient communication;
     private ArrayList<ProjectInfo> projectList = new ArrayList<ProjectInfo>();
-    public String userName="";
 
     public AllFunctions(){
 
@@ -27,7 +28,6 @@ public class AllFunctions{
             public void run(){
 
                 communication.login(username, password);
-                userName=communication.userName;
 
             }
         }).start();
@@ -59,10 +59,13 @@ public class AllFunctions{
 
     }
 
-    private AllFunctions getObject(){
+    static private AllFunctions getObject(){
+        if(allFunctions == null){
 
-        return this;
+            allFunctions = new AllFunctions();
 
+        }
+        return allFunctions;
     }
 
     public void register(final String firstName, final String middleName,
@@ -182,7 +185,17 @@ public class AllFunctions{
 
     public void projectCriteria(ProjectInfo project, ArrayList<Criteria> criteriaList){
 
-        communication.criteriaListSend(project.getProjectName(), criteriaList);
+        new Thread(new Runnable(){
+            @Override
+            public void run(){
+
+                communication.criteriaListSend(project.getProjectName(), criteriaList);
+
+                Log.d("readExcel","success");
+
+            }
+        }).start();
+
 
     }
 
@@ -191,6 +204,7 @@ public class AllFunctions{
         ReadExcel read = new ReadExcel();
         read.setInputFile(path);
         project.addStudentList(read.read());
+        System.out.println("student list in allFunction: "+read.read().size());
 
         new Thread(new Runnable(){
             @Override
@@ -209,8 +223,7 @@ public class AllFunctions{
     public void addStudent(ProjectInfo project, String number, String firstName,
                            String middleName, String surname, String email){
 
-        StudentInfo studentInfo = new StudentInfo();
-        studentInfo.setStudentInfo(number, firstName, middleName, surname, email);
+        StudentInfo studentInfo = new StudentInfo(number, firstName, middleName, surname, email);
         project.addSingleStudent(studentInfo);
 
         new Thread(new Runnable(){
@@ -230,9 +243,12 @@ public class AllFunctions{
     {
         ArrayList<StudentInfo> list = project.getStudentInfo();
 
+        //test
+        System.out.println("list size in search student: "+list.size());
         for(int i = 0; i < list.size(); i++){
-
-            if(number.equals(list.get(i))){
+            //test
+            // System.out.println("The "+i+" student number: "+list.get(i).getNumber());
+            if(number.equals(list.get(i).getNumber())){
 
                 return i;
 
@@ -279,5 +295,21 @@ public class AllFunctions{
         }).start();
     }
 
-    //public void groupStudent(ProjectInfo project, )
+    public void groupStudent(ProjectInfo project, ArrayList<StudentInfo> studentList){
+
+        project.addStudentList(studentList);
+
+        new Thread(new Runnable(){
+            @Override
+            public void run(){
+
+                communication.importStudents(project.getProjectName(),
+                        project.getStudentInfo());
+
+                Log.d("groupStudent","success");
+
+            }
+        }).start();
+
+    }
 }

@@ -4,8 +4,6 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.TypeReference;
-import com.example.myapplication.ProjectInfo;
-import com.example.myapplication.StudentInfo;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -23,22 +21,15 @@ public class CommunicationForClient {
     private String host;
     private OkHttpClient client;
     private String token;
-    public String userName="";
     //private String myUsername;
     AllFunctions functions;
-    boolean register_ACK=false;
+
     public CommunicationForClient(AllFunctions functions) {
         host = "http://10.13.101.237:8080/RapidFeedback/";
         client = new OkHttpClient();
         this.functions = functions;
     }
 
-    //This is the constructor for test
-    public CommunicationForClient()
-    {
-        host = "http://10.13.101.237/RapidFeedback/";
-        client = new OkHttpClient();
-    }
 
     public void register(String firstName, String middleName, String lastName,
                          String email, String password) {
@@ -60,7 +51,7 @@ public class CommunicationForClient {
             System.out.println("Receive: " + receive); //just for test
             JSONObject jsonReceive = JSONObject.parseObject(receive);
 
-            register_ACK = Boolean.getBoolean(jsonReceive.get("register_ACK").toString());
+            boolean register_ACK = Boolean.getBoolean(jsonReceive.get("register_ACK").toString());
             functions.registerACK(register_ACK);
         } catch (IOException e1) {
             e1.printStackTrace();
@@ -86,8 +77,6 @@ public class CommunicationForClient {
             int login_ACK = Integer.parseInt(jsonReceive.get("login_ACK").toString());
             if (login_ACK > 0)
             {
-                userName=username;
-
                 //get projectlist from jsonReceive
                 String projectListString = jsonReceive.get("projectList").toString();
                 List<ProjectInfo> projectList = JSONObject.parseArray(projectListString, ProjectInfo.class);
@@ -103,11 +92,11 @@ public class CommunicationForClient {
                 }
 
                 functions.loginSucc(arrayList);
+
                 token = jsonReceive.getString("token");
             }
             else {
                 functions.loginFail();
-                username=null;
             }
         } catch (IOException e1) {
             e1.printStackTrace();
@@ -156,7 +145,7 @@ public class CommunicationForClient {
 
         RequestBody body = RequestBody.create(JSON, jsonSend.toJSONString());
         Request request = new Request.Builder()
-                .url(host + "CriteriaList_Servlet")
+                .url(host + "CriteriaListServlet")
                 .post(body)
                 .build();
         try (Response response = client.newCall(request).execute()) {
