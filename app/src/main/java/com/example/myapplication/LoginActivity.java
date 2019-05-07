@@ -23,6 +23,7 @@ public class LoginActivity extends AppCompatActivity {
         Button reset=(Button)findViewById(R.id.btn_reset);
         String email1=email.getText().toString();
         String password1=password.getText().toString();
+
         final AllFunctions af=new AllFunctions();
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
