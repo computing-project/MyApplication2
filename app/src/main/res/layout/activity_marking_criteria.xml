@@ -348,7 +348,7 @@
 
                 <ImageView
                     android:id="@+id/imageView10"
-                    android:layout_width="54dp"
+                    android:layout_width="129dp"
                     android:layout_height="48dp"
                     android:layout_x="478dp"
                     android:layout_y="268dp"

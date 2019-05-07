@@ -29,7 +29,7 @@ public class SignUp extends AppCompatActivity {
         String cPassword=cpassword.getText().toString();
         AllFunctions af=new AllFunctions();
         Button submit=(Button)findViewById(R.id.button);
-        CommunicationForClient cfc=new CommunicationForClient();
+        CommunicationForClient cfc=new CommunicationForClient(af);
         Boolean ack=false;
         submit.setOnClickListener(new View.OnClickListener() {
             @Override

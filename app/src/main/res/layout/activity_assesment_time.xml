@@ -66,16 +66,16 @@
             tools:layout_editor_absoluteY="348dp" />
 
         <EditText
-            android:id="@+id/pname2"
+            android:id="@+id/time1"
             android:layout_width="40dp"
-            android:layout_height="57dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="15dp"
             android:layout_x="510dp"
 
-
             android:layout_y="335dp"
             android:background="@drawable/rounded_white"
+            android:gravity="center"
             android:padding="10dp"
 
             android:paddingLeft="30dp"
@@ -85,16 +85,16 @@
             tools:layout_editor_absoluteY="330dp" />
 
         <EditText
-            android:id="@+id/pname4"
+            android:id="@+id/time2"
             android:layout_width="40dp"
-            android:layout_height="57dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="15dp"
             android:layout_x="890dp"
 
-
             android:layout_y="338dp"
             android:background="@drawable/rounded_white"
+            android:gravity="center"
             android:padding="10dp"
 
             android:paddingLeft="30dp"
@@ -104,16 +104,16 @@
             tools:layout_editor_absoluteY="330dp" />
 
         <EditText
-            android:id="@+id/pname5"
+            android:id="@+id/time4"
             android:layout_width="40dp"
-            android:layout_height="57dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="15dp"
             android:layout_x="888dp"
-
-
             android:layout_y="441dp"
+
             android:background="@drawable/rounded_white"
+            android:gravity="center"
             android:padding="10dp"
 
             android:paddingLeft="30dp"
@@ -123,16 +123,16 @@
             tools:layout_editor_absoluteY="330dp" />
 
         <EditText
-            android:id="@+id/pname3"
+            android:id="@+id/time3"
             android:layout_width="40dp"
-            android:layout_height="57dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="15dp"
             android:layout_x="507dp"
 
-
             android:layout_y="441dp"
             android:background="@drawable/rounded_white"
+            android:gravity="center"
             android:padding="10dp"
 
             android:paddingLeft="30dp"

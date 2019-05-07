@@ -21,6 +21,7 @@ public class CommunicationForClient {
     private String host;
     private OkHttpClient client;
     private String token;
+    String userName="";
     //private String myUsername;
     AllFunctions functions;
 
@@ -78,6 +79,7 @@ public class CommunicationForClient {
             if (login_ACK > 0)
             {
                 //get projectlist from jsonReceive
+                userName=username;
                 String projectListString = jsonReceive.get("projectList").toString();
                 List<ProjectInfo> projectList = JSONObject.parseArray(projectListString, ProjectInfo.class);
                 ArrayList<ProjectInfo> arrayList ;

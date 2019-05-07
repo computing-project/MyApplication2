@@ -35,8 +35,8 @@ public class LoginActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
                 @Override
             public void onClick(View v) {
-                af.login("test@gmail.com","123456");
-                userName=af.userName;
+               // af.login("test@gmail.com","123456");
+                //userName=af.userName;
 
                 if(userName!=null) {
                     Toast.makeText(getApplicationContext(),userName,Toast.LENGTH_LONG).show();

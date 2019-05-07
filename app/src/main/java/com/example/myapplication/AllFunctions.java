@@ -14,7 +14,7 @@ public class AllFunctions{
 
     private CommunicationForClient communication;
     private ArrayList<ProjectInfo> projectList = new ArrayList<ProjectInfo>();
-
+String userName="";
     public AllFunctions(){
 
         communication = new CommunicationForClient(getObject());
@@ -28,7 +28,7 @@ public class AllFunctions{
             public void run(){
 
                 communication.login(username, password);
-
+                userName=communication.userName;
             }
         }).start();
     }
