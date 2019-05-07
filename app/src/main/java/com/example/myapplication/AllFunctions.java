@@ -14,10 +14,10 @@ public class AllFunctions{
 
     private CommunicationForClient communication;
     private ArrayList<ProjectInfo> projectList = new ArrayList<ProjectInfo>();
-String userName="";
-    public AllFunctions(){
 
-        communication = new CommunicationForClient(getObject());
+    private AllFunctions(){
+
+        communication = new CommunicationForClient(this);
 
     }
 
@@ -28,7 +28,7 @@ String userName="";
             public void run(){
 
                 communication.login(username, password);
-                userName=communication.userName;
+
             }
         }).start();
     }
@@ -59,7 +59,7 @@ String userName="";
 
     }
 
-    static private AllFunctions getObject(){
+    static public AllFunctions getObject(){
         if(allFunctions == null){
 
             allFunctions = new AllFunctions();
