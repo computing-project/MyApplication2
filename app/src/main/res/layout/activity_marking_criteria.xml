@@ -25,6 +25,84 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
+        <ScrollView
+            android:layout_width="372dp"
+            android:layout_height="547dp"
+            android:layout_alignParentBottom="true"
+            android:layout_x="490dp"
+            android:layout_y="231dp"
+            android:scaleType="fitCenter">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="@drawable/trans_white_rectangle"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:layout_x="591dp"
+                    android:layout_y="0dp"
+                    android:text="Marked Criteria"
+                    android:textColor="#ffffff"
+                    android:textColorLink="@color/colorPrimary"
+                    android:textSize="30sp"
+                    tools:layout_editor_absoluteX="240dp"
+                    tools:layout_editor_absoluteY="318dp" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="0dp"
+                    android:layout_y="136dp"
+                    android:drawableRight="@drawable/drag"
+                    android:gravity="left|center_vertical"
+                    android:text="Presentation Structure"
+                    tools:layout_editor_absoluteX="63dp"
+                    tools:layout_editor_absoluteY="347dp" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="0dp"
+                    android:layout_y="136dp"
+                    android:drawableRight="@drawable/drag"
+                    android:gravity="left|center_vertical"
+                    android:text="Quality of Slides/Visual Aids"
+                    tools:layout_editor_absoluteX="63dp"
+                    tools:layout_editor_absoluteY="347dp" />
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="0dp"
+                    android:layout_y="136dp"
+                    android:drawableRight="@drawable/drag"
+                    android:gravity="left|center_vertical"
+                    android:text="Voice, Pace and Confidence"
+                    tools:layout_editor_absoluteX="63dp"
+                    tools:layout_editor_absoluteY="347dp" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="129dp"
+                    android:layout_height="48dp"
+                    android:layout_x="478dp"
+                    android:layout_y="268dp"
+                    app:srcCompat="@drawable/plus1"
+                    tools:layout_editor_absoluteX="398dp"
+                    tools:layout_editor_absoluteY="257dp" />
+
+
+            </TableLayout>
+        </ScrollView>
+
         <ImageView
 
             android:layout_width="289dp"
@@ -218,11 +296,11 @@
             tools:layout_editor_absoluteY="318dp" />
 
         <ScrollView
-            android:layout_width="467dp"
+            android:layout_width="385dp"
             android:layout_height="407dp"
             android:layout_alignParentBottom="true"
-            android:layout_x="654dp"
-            android:layout_y="241dp"
+            android:layout_x="882dp"
+            android:layout_y="232dp"
             android:scaleType="fitCenter">
 
             <TableLayout
@@ -270,12 +348,13 @@
 
             </TableLayout>
         </ScrollView>
+
         <ScrollView
-            android:layout_width="467dp"
-            android:layout_height="407dp"
+            android:layout_width="372dp"
+            android:layout_height="547dp"
             android:layout_alignParentBottom="true"
-            android:layout_x="107dp"
-            android:layout_y="239dp"
+            android:layout_x="79dp"
+            android:layout_y="235dp"
             android:scaleType="fitCenter">
 
             <TableLayout
@@ -291,7 +370,7 @@
                     android:layout_height="59dp"
                     android:layout_x="591dp"
                     android:layout_y="0dp"
-                    android:text="Marked Criteria"
+                    android:text="Criteria List"
                     android:textColor="#ffffff"
                     android:textColorLink="@color/colorPrimary"
                     android:textSize="30sp"
@@ -304,11 +383,11 @@
                     android:layout_height="wrap_content"
                     android:layout_x="0dp"
                     android:layout_y="136dp"
+                    android:drawableRight="@drawable/drag"
+                    android:gravity="left|center_vertical"
                     android:text="Presentation Structure"
                     tools:layout_editor_absoluteX="63dp"
-                    tools:layout_editor_absoluteY="347dp"
-                    android:gravity="left|center_vertical"
-                    android:drawableRight="@drawable/drag"/>
+                    tools:layout_editor_absoluteY="347dp" />
 
                 <Button
                     android:id="@+id/button8"
@@ -316,35 +395,11 @@
                     android:layout_height="wrap_content"
                     android:layout_x="0dp"
                     android:layout_y="136dp"
-                    android:text="Content"
-                    tools:layout_editor_absoluteX="63dp"
-                    tools:layout_editor_absoluteY="347dp"
-                    android:gravity="left|center_vertical"
-                    android:drawableRight="@drawable/drag"/>
-
-                <Button
-                    android:id="@+id/button9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_x="0dp"
-                    android:layout_y="136dp"
                     android:drawableRight="@drawable/drag"
                     android:gravity="left|center_vertical"
-                    android:text="Knowledge of Material"
+                    android:text="Content"
                     tools:layout_editor_absoluteX="63dp"
                     tools:layout_editor_absoluteY="347dp" />
-
-                <Button
-                    android:id="@+id/button10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_x="0dp"
-                    android:layout_y="136dp"
-                    android:text="Voice, Pace and Confidence"
-                    tools:layout_editor_absoluteX="63dp"
-                    tools:layout_editor_absoluteY="347dp"
-                    android:gravity="left|center_vertical"
-                    android:drawableRight="@drawable/drag"/>
 
                 <ImageView
                     android:id="@+id/imageView10"
