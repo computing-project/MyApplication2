@@ -22,7 +22,7 @@ public class Mark {
     public ArrayList<Criteria> getCriteriaList() {
 
         return criteriaList;
-    
+
     }
 
     public ArrayList<Double> getMarkList() {
