@@ -26,11 +26,15 @@
             android:name=".AssesmentTime"
             android:screenOrientation="landscape" />
         <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+             />
+        <activity
             android:name=".AboutActivity"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login"
+            android:name=".Assessment_Preparation_Activity"
+
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
