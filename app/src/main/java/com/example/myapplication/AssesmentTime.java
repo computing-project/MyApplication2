@@ -59,6 +59,10 @@ public class AssesmentTime extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 t1--;
+                if(t1<0)
+                {
+                    t1=0;
+                }
                 time1.setText(String.valueOf(t1));
             }
         });
@@ -73,6 +77,10 @@ public class AssesmentTime extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 t2--;
+                if(t2<0)
+                {
+                    t2=0;
+                }
                 time2.setText(String.valueOf(t2));
             }
         });
@@ -87,6 +95,10 @@ public class AssesmentTime extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 t3--;
+                if(t3<0)
+                {
+                    t3=0;
+                }
                 time3.setText(String.valueOf(t3));
             }
         });
@@ -101,6 +113,10 @@ public class AssesmentTime extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 t4--;
+                if(t4<0)
+                {
+                    t4=0;
+                }
                 time4.setText(String.valueOf(t4));
             }
         });
