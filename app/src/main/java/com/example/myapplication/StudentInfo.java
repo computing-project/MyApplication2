@@ -32,7 +32,7 @@ public class StudentInfo {
     public void setMark(Mark mark) {
 
         this.mark = mark;
-    
+
     }
 
     public StudentInfo(){}
