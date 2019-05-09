@@ -7,7 +7,8 @@ public class StudentInfo {
     private String middleName;
     private String surname;
     private String email;
-    private Double mark;
+    private Double toatalMark;
+    private Mark mark;
     private int group;
 
 
@@ -58,9 +59,9 @@ public class StudentInfo {
 
     }
 
-    public void setMark(Double mark){
+    public void setMark(Double totalMark){
 
-        this.mark = mark;
+        this.toatalMark = totalMark;
 
     }
 
@@ -108,7 +109,7 @@ public class StudentInfo {
 
     public Double getMark(){
 
-        return mark;
+        return toatalMark;
 
     }
 
