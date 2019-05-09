@@ -36,11 +36,14 @@ public class LoginActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
                 @Override
             public void onClick(View v) {
-               // af.login("test@gmail.com","123456");
-                //userName=af.userName;
-
-                if(userName!=null) {
+                    EditText email=(EditText)findViewById(R.id.userEmail);
+                    EditText password=(EditText)findViewById(R.id.userPassword);
+                    String email1=email.getText().toString();
+                    String password1=password.getText().toString();
+               af.login(email1, password1);
+                if(email1.equals("")) {
                     Toast.makeText(getApplicationContext(),userName,Toast.LENGTH_LONG).show();
+
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                 }
