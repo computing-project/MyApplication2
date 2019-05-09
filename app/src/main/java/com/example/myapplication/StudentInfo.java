@@ -7,9 +7,33 @@ public class StudentInfo {
     private String middleName;
     private String surname;
     private String email;
-    private Double mark;
+    private Double totalMark;
+    private Mark mark;
     private int group;
 
+    public Double getTotalMark() {
+
+        return totalMark;
+
+    }
+
+    public void setTotalMark(Double totalMark) {
+
+        this.totalMark = totalMark;
+
+    }
+
+    public Mark getMark() {
+
+        return mark;
+
+    }
+
+    public void setMark(Mark mark) {
+
+        this.mark = mark;
+
+    }
 
     public StudentInfo(){}
     public StudentInfo(String number, String firstName, String middleName,
@@ -58,12 +82,6 @@ public class StudentInfo {
 
     }
 
-    public void setMark(Double mark){
-
-        this.mark = mark;
-
-    }
-
 
     public void setGroup(int group){
 
@@ -106,11 +124,6 @@ public class StudentInfo {
 
     }
 
-    public Double getMark(){
-
-        return mark;
-
-    }
 
     public int getGroup(){
 
