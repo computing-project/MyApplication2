@@ -20,7 +20,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CustomisedGrading"></activity>
+        <activity android:name=".CustomisedGrading"
+            android:screenOrientation="landscape" ></activity>
         <activity
             android:name=".MarkingCriteria"
             android:screenOrientation="landscape" />
@@ -29,7 +30,8 @@
             android:screenOrientation="landscape" />
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login">
+            android:label="@string/title_activity_login"
+            android:screenOrientation="landscape" >
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 

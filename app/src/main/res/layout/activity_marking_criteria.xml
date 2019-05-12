@@ -46,7 +46,7 @@
                     android:layout_height="59dp"
                     android:layout_x="591dp"
                     android:layout_y="0dp"
-                    android:text="Marked Criteria"
+                    android:text="Marking Criteria"
                     android:textColor="#ffffff"
                     android:textColorLink="@color/colorPrimary"
                     android:textSize="30sp"

@@ -18,10 +18,9 @@ public class AboutActivity extends AppCompatActivity {
         setContentView(R.layout.activity_about);
         Intent intent =getIntent();
         index = intent.getStringExtra("index");
-        if(index.equals("-999"))
-            ;
-        else
-            init(Integer.parseInt(index));
+        //if(index.equals("-999"));
+        //else
+          //  init(Integer.parseInt(index));
         Button next = (Button)findViewById(R.id.button);
         EditText pname=(EditText)findViewById(R.id.pname);
         EditText sname=(EditText)findViewById(R.id.sname);
