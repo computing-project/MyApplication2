@@ -433,7 +433,7 @@
             android:layout_y="243dp"
             android:scaleType="fitCenter">
 
-            <android.support.constraint.ConstraintLayout
+            <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="30dp"
@@ -555,7 +555,7 @@
                     tools:layout_editor_absoluteX="326dp"
                     tools:layout_editor_absoluteY="59dp" />
 
-            </android.support.constraint.ConstraintLayout>
+            </GridLayout>
         </ScrollView>
 
         <ImageView
