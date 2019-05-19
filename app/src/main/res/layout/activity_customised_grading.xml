@@ -684,7 +684,7 @@
         <Button
             android:id="@+id/button111"
             android:layout_width="25dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_marginStart="5dp"
             android:layout_marginTop="700dp"
