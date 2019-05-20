@@ -3,6 +3,9 @@ package com.example.myapplication;
 import java.util.ArrayList;
 import java.util.List;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ProjectInfo {
 
     private String projectName;
@@ -18,9 +21,20 @@ public class ProjectInfo {
 
     private ArrayList<String> assistantList = new ArrayList<String>();
     private ArrayList<Criteria> criteriaList= new ArrayList<Criteria>();
-    //private ArrayList<Criteria> commentList= new ArrayList<Criteria>();
+    private ArrayList<Criteria> commentList= new ArrayList<Criteria>();
     private ArrayList<StudentInfo> studentInfoList = new ArrayList<StudentInfo>();
 
+    public ArrayList<Criteria> getCommentList() {
+
+        return commentList;
+
+    }
+
+    public void setCommentList(ArrayList<Criteria> commentList) {
+
+        this.commentList = commentList;
+
+    }
 
     public void setProjectName(String projectName){
 
@@ -69,11 +83,7 @@ public class ProjectInfo {
 
     }
 
-//    public void setComment(ArrayList<Criteria> commentList){
-//
-//        this.commentList = commentList;
-//
-//    }
+
 
     public void addStudentList(ArrayList<StudentInfo> studentInfoList){
 
@@ -91,19 +101,6 @@ public class ProjectInfo {
         this.criteriaList.add(criteria);
     }
 
-//    public void addSingleComment(Criteria criteria){
-//
-//        commentList.add(criteria);
-//    }
-
-    public void setTimer(int durationMin, int durationSec, int warningMin, int warningSec){
-
-        this.durationMin = durationMin;
-        this.durationSec = durationSec;
-        this.warningMin = warningMin;
-        this.warningSec = warningSec;
-
-    }
 
     public void setDurationMin(int durationMin) {
         this.durationMin = durationMin;
